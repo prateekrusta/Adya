@@ -1,0 +1,386 @@
+@font-face {
+    font-family: allura;
+    src: url("../fonts/allura.ttf");
+} 
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Yellowtail&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+  html body {
+    margin: 0px;
+    font-family: "segoe ui";
+    overflow-x: hidden;
+  }
+  
+  .nav {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    transition: 0.5s all;
+    transition-delay: 0.2s;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #fff;
+    float: left;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links > a {
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fc2956 ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    border-radius: 50px;
+    margin: 20px 5px;
+    transition: background-color 0.3s;
+  }
+  .nav > .nav-links > a:hover {
+    color: white;
+    background-color: #fc2956;
+  }
+  
+  .banner-main{
+      height: 100vh;
+      background: url('../images/banner-main.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .banner-main-inner{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .banner-left{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .banner-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+  }
+
+  .main-heading{
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 1px;
+    font-size: 8rem;
+  }
+  .sub-heading{
+    font-family: 'Big Shoulders Display', cursive !important;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .button-banner{
+    background-color: #fc2956;
+    color: white;
+    border: 2px solid #fc2956;
+    padding: 7px 20px;
+    border-radius: 30px;
+    margin: 20px 10px;
+
+  }
+
+  .banner-photo{
+      width: 40%;
+  }
+
+  .signupbtn, .loginbtn {
+    background-color: #fc2956;
+    color: white !important;
+  }
+
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  .brand-name-logo {
+    width: 60px;
+    z-index: 99999;
+    border: 1px solid #fc2956;
+    border-radius: 30px;
+  }
+  
+  @media (min-width: 840px) {
+    .nav > .nav-links {
+      font-size: 18px;
+      margin: auto 50px;
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 1025px){
+
+    .banner-left{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-80%, -50%);
+    }
+    
+    .banner-photo{
+        width: 180%;
+    }
+
+    .banner-right{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+    .main-heading{
+        font-family: 'Yellowtail', cursive;
+        letter-spacing: 1px;
+        font-size: 12rem;
+      }
+      .sub-heading{
+        font-family: 'Poppins', sans-serif !important;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        margin: 0px 0px 20px 0px;
+      }
+  }
+  
+  @media (max-width: 840px) {
+    .nav {
+        background: white;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 2%;
+      top: 7%;
+    }
+  
+    .nav-title {
+      position: relative;
+      top: -3px;
+    }
+  
+    .nav > .nav-links > a {
+      border-radius: 0px;
+    }
+  
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      position: relative;
+      top: 14px;
+      right: 10px;
+    }
+    .nav > .nav-btn > label{
+      background-color: #ffc0cb;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 105%;
+      background: white;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 80px;
+      left: -10px;
+    }
+  
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      color: #fc2956;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .nav > .nav-links > a:focus{
+      color: white !important;
+    }
+
+    .signupbtn, .loginbtn{
+        background-color: #fc2956;
+    }
+  
+    .nav > #nav-check:not(:checked) + .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked + .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  @media (max-width: 769px){
+
+    .banner-left{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+    }
+    
+    .banner-photo{
+        width: 150%;
+    }
+
+    .banner-right{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+    .main-heading{
+        font-family: 'Yellowtail', cursive;
+        letter-spacing: 1px;
+        font-size: 9rem;
+      }
+      .sub-heading{
+        font-family: 'Poppins', sans-serif !important;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        margin: 0px 0px 20px 0px;
+      }
+      .signupbtn, .loginbtn{
+        background-color: #fc2956;
+        width: 50% !important;
+        border-radius: 50px !important;
+        position: relative;
+        left: 25%;
+    }
+    .nav{
+      
+    }
+  }
+
+  @media (max-width: 450px){
+    .banner-left{
+        display: none;
+    }
+
+    .banner-right{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(12%, -50%);
+        text-align: center;
+    }
+    .banner-photo{
+        width: 40%;
+    }
+    .main-heading{
+        font-family: 'Yellowtail', cursive;
+        letter-spacing: 1px;
+        font-size: 7rem;
+      }
+    .sub-heading{
+        font-family: 'Poppins', sans-serif !important;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        margin: 0px 0px 20px 0px;
+      }
+  }
+  
+  @media (max-width: 376px){
+    .banner-left{
+        display: none;
+    }
+
+    .banner-right{
+        left: 0%;
+        transform: translate(6%, -50%);
+    }
+    .main-heading{
+        font-family: 'Yellowtail', cursive;
+        letter-spacing: 1px;
+        font-size: 7rem;
+      }
+      .sub-heading{
+        font-family: 'Poppins', sans-serif !important;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        margin: 0px 0px 20px 0px;
+      }
+  }
+
+  @media (max-width: 361px){
+    .banner-left{
+        display: none;
+    }
+
+    .banner-right{
+        left: 0%;
+        transform: translate(4%, -50%);
+    }
+    .main-heading{
+        font-family: 'Yellowtail', cursive;
+        letter-spacing: 1px;
+        font-size: 7rem;
+      }
+      .sub-heading{
+        font-family: 'Poppins', sans-serif !important;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        margin: 0px 0px 20px 0px;
+      }
+  }
+
+  @media (max-width: 321px){
+    .banner-left{
+        display: none;
+    }
+
+    .banner-right{
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+    .main-heading{
+        font-family: 'Yellowtail', cursive;
+        letter-spacing: 1px;
+        font-size: 7rem;
+      }
+      .sub-heading{
+        font-family: 'Poppins', sans-serif !important;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        margin: 0px 0px 20px 0px;
+      }
+  }
+  

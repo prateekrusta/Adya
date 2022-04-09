@@ -1,0 +1,264 @@
+
+    .scheme-outer{
+        padding: 50px;
+    }
+  
+  .scheme-outer img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid #fc2956;
+  }
+  
+  .scheme-outer .card-container {
+    margin: 20px;
+    width: 400px;
+  }
+
+  .image1{
+    position: relative;
+    top: 160px; 
+    left: 25px !important;
+    width: 350px !important;
+    height: 250px; 
+  }
+  
+  .scheme-outer .front, .scheme-outer .back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    transition-delay: 0.15s;
+    transition: 0;
+  }
+  
+  .scheme-outer .front {
+    transform: rotateY(0deg);
+  }
+  
+  .scheme-outer .back {
+    transform: rotateY(180deg);
+    opacity: 0;
+    padding-top: 60px;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    background: #fc2956;
+    color: white;
+  }
+  
+  .scheme-outer .card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 40px 110px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    position: relative;
+    left: 60px;
+  }
+  .scheme-outer .card:hover {
+    transform: rotateY(180deg);
+  }
+  .scheme-outer .card:hover .front {
+    opacity: 0;
+  }
+  .scheme-outer .card:hover .back {
+    opacity: 1;
+  }
+  
+  .scheme-outer .sub-title {
+    color: #DE6262;
+    -webkit-animation: slide-in 0.75s;
+            animation: slide-in 0.75s;
+    -webkit-animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+            animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+            animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0 0 5px 0;
+  }
+  
+  .scheme-outer .title {
+    color: #333741;
+    -webkit-animation: slide-in-slow 0.75s;
+            animation: slide-in-slow 0.75s;
+    -webkit-animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+            animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+            animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .scheme-outer .synopsis {
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0 0 15px;
+  }
+  
+  .scheme-outer p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 0 0 35px;
+  }
+  
+  .scheme-outer .btn {
+    border: 1px solid #FFB88C;
+    border-radius: 5px;
+    background: transparent;
+    display: inline-block;
+    font-size: 17px;
+    padding: 8px 20px 9px 15px;
+    color: #FFB88C;
+    transition: 0.5s;
+    margin: 0 2px 0;
+    font-weight: 100;
+  }
+  .scheme-outer .btn i {
+    margin: 0 5px 0;
+  }
+  
+  .scheme-outer .image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-animation: slide-in-right 1.25s;
+            animation: slide-in-right 1.25s;
+    -webkit-animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+            animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+            animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  @-webkit-keyframes slide-in {
+    0% {
+      transform: translate3d(-300px, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translate3d(-300px, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-webkit-keyframes slide-in-slow {
+    0% {
+      transform: translate3d(-300px, 0, 0);
+    }
+    20% {
+      transform: translate3d(-300px, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slide-in-slow {
+    0% {
+      transform: translate3d(-300px, 0, 0);
+    }
+    20% {
+      transform: translate3d(-300px, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-webkit-keyframes slide-in-right {
+    0% {
+      transform: translate3d(400px, 0, 0);
+    }
+    30% {
+      transform: translate3d(400px, 0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      transform: translate3d(400px, 0, 0);
+    }
+    30% {
+      transform: translate3d(400px, 0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    .scheme-outer .card{
+      left: 20px;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    .scheme-outer .card{
+      left: 120px;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
+    .scheme-outer .card{
+      left: -15px;
+      width: 300px;
+      height: 600px;
+    }
+    .image1{
+      position: relative;
+      top: 180px; 
+      left: 25px !important;
+      width: 250px !important;
+      height: 300px; 
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .scheme-outer .card{
+      left: -30px;
+      width: 300px;
+      height: 600px;
+    }
+  }
+
+  @media screen and (max-width: 361px) {
+    .scheme-outer .card{
+      left: -40px;
+      width: 300px;
+      height: 600px;
+    }
+  }
+
+

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+.about-inner{
+    background: url('../images/pinky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.main-headings{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-heading{
+    font-family: 'Mukta', sans-serif;
+}
+
+.about-right{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(40%, -30%);
+}
+
+.about-photo{
+    width: 75%;
+    border-bottom: 5px solid #fc2956;
+    border-radius: 20px;
+}
+
+.hello-about{
+    position: relative;
+    top: -90px;
+}
+
+.logo-adya{
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid #fc2956;
+    position: relative;
+    top: -5px;
+  }
+
+.about-body{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    color: black;
+    padding: 20px;
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1025px){
+    .about-inner{
+        height: 40vh;
+    }
+    .about-photo{
+        width: 80%;
+    }
+    .about-right{
+        top: 40%;
+        left: 65%;
+        transform: translate(-10%, -30%);
+    }
+    .about-body{
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .about-inner{
+        height: 100vh;
+    }
+    .about-photo{
+        width: 100%;
+    }
+    .about-right{
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+    .main-headings{
+        position: absolute;
+        top: 13%;
+        left: 30% !important;
+        transform: translate(-10%, -50%);
+    }
+    .about-body{
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 415px){
+    .about-inner{
+        height: 100vh;
+    }
+    .about-right{
+        display: none;
+    }
+    .main-headings{
+        font-size: 3rem;
+        position: absolute;
+        top: 13%;
+        left: 30%;
+        transform: translate(-15%, -50%);
+    }
+    .about-body{
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+    .about-inner{
+        height: 110vh;
+    }
+    .about-right{
+        display: none;
+    }
+    .main-headings{
+        font-size: 3rem;
+        position: absolute;
+        top: 11%;
+        left: 30%;
+        transform: translate(-15%, -50%);
+    }
+    .about-body{
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .about-inner{
+        height: 90vh;
+    }
+    .about-right{
+        display: none;
+    }
+    .main-headings{
+        font-size: 2.5rem;
+        position: absolute;
+        top: 11%;
+        left: 30%;
+        transform: translate(-15%, -50%);
+    }
+    .about-body{
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+
+
